@@ -1,6 +1,6 @@
 # Color Enhance
 
-Script for [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) to enhance colors.
+Script for [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) to enhance colors.
 
 This is the same algorithm GIMP/GEGL uses for color enhancement. The gist of this implementation is that it converts the color space to [CIELCh(ab)](https://en.wikipedia.org/wiki/CIELUV#Cylindrical_representation_(CIELCh)) and normalizes the chroma (or ["colorfulness"](https://en.wikipedia.org/wiki/Colorfulness)) component. Original source can be found in the link below.
 
