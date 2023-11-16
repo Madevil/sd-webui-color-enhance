@@ -17,10 +17,8 @@ class ScriptPostprocessingColorEnhance(scripts_postprocessing.ScriptPostprocessi
     def process(self, pp: scripts_postprocessing.PostprocessedImage, strength):
         if strength == 0:
             return
-        
+
         info_bak = {} if not hasattr(pp.image, "info") else pp.image.info
         pp.image = lib.color_enhance(pp.image, strength)
         pp.image.info = info_bak
         pp.info["Color Enhance"] = strength
-
-    
