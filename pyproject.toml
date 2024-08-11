@@ -1,0 +1,14 @@
+[project]
+name = "sd-webui-color-enhance"
+description = "Enhance colors via color space conversion."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://git.mmaker.moe/mmaker/sd-webui-color-enhance"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "mmaker"
+DisplayName = "Color Enhance"
+Icon = ""
